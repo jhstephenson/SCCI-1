@@ -1,0 +1,1 @@
+json.extract! @message, :id, :from, :of, :phone, :cell_phone, :message, :telephoned, :returned_your_call, :please_call, :please_call, :will_call_again, :came_to_see_you, :wants_to_see_you, :other, :other_text, :boolean, :signed, :created_at, :updated_at

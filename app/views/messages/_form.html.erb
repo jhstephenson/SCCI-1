@@ -1,0 +1,81 @@
+<%= form_for(@message) do |f| %>
+  <% if @message.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@message.errors.count, "error") %> prohibited this message from being saved:</h2>
+
+      <ul>
+      <% @message.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :from %><br>
+    <%= f.text_field :from %>
+  </div>
+  <div class="field">
+    <%= f.label :of %><br>
+    <%= f.text_field :of %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br>
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :cell_phone %><br>
+    <%= f.text_field :cell_phone %>
+  </div>
+  <div class="field">
+    <%= f.label :message %><br>
+    <%= f.text_area :message %>
+  </div>
+  <div class="field">
+    <%= f.label :telephoned %><br>
+    <%= f.check_box :telephoned %>
+  </div>
+  <div class="field">
+    <%= f.label :returned_your_call %><br>
+    <%= f.check_box :returned_your_call %>
+  </div>
+  <div class="field">
+    <%= f.label :please_call %><br>
+    <%= f.check_box :please_call %>
+  </div>
+  <div class="field">
+    <%= f.label :please_call %><br>
+    <%= f.check_box :please_call %>
+  </div>
+  <div class="field">
+    <%= f.label :will_call_again %><br>
+    <%= f.check_box :will_call_again %>
+  </div>
+  <div class="field">
+    <%= f.label :came_to_see_you %><br>
+    <%= f.check_box :came_to_see_you %>
+  </div>
+  <div class="field">
+    <%= f.label :wants_to_see_you %><br>
+    <%= f.check_box :wants_to_see_you %>
+  </div>
+  <div class="field">
+    <%= f.label :other %><br>
+    <%= f.check_box :other %>
+  </div>
+  <div class="field">
+    <%= f.label :other_text %><br>
+    <%= f.text_field :other_text %>
+  </div>
+  <div class="field">
+    <%= f.label :boolean %><br>
+    <%= f.text_field :boolean %>
+  </div>
+  <div class="field">
+    <%= f.label :signed %><br>
+    <%= f.text_field :signed %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

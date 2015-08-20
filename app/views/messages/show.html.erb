@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>From:</strong>
+  <%= @message.from %>
+</p>
+
+<p>
+  <strong>Of:</strong>
+  <%= @message.of %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @message.phone %>
+</p>
+
+<p>
+  <strong>Cell phone:</strong>
+  <%= @message.cell_phone %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @message.message %>
+</p>
+
+<p>
+  <strong>Telephoned:</strong>
+  <%= @message.telephoned %>
+</p>
+
+<p>
+  <strong>Returned your call:</strong>
+  <%= @message.returned_your_call %>
+</p>
+
+<p>
+  <strong>Please call:</strong>
+  <%= @message.please_call %>
+</p>
+
+<p>
+  <strong>Please call:</strong>
+  <%= @message.please_call %>
+</p>
+
+<p>
+  <strong>Will call again:</strong>
+  <%= @message.will_call_again %>
+</p>
+
+<p>
+  <strong>Came to see you:</strong>
+  <%= @message.came_to_see_you %>
+</p>
+
+<p>
+  <strong>Wants to see you:</strong>
+  <%= @message.wants_to_see_you %>
+</p>
+
+<p>
+  <strong>Other:</strong>
+  <%= @message.other %>
+</p>
+
+<p>
+  <strong>Other text:</strong>
+  <%= @message.other_text %>
+</p>
+
+<p>
+  <strong>Boolean:</strong>
+  <%= @message.boolean %>
+</p>
+
+<p>
+  <strong>Signed:</strong>
+  <%= @message.signed %>
+</p>
+
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'Back', messages_path %>
